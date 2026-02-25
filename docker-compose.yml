@@ -10,6 +10,12 @@ services:
       - mongo-data:/data/db
     environment:
       MONGO_INITDB_DATABASE: chatdb
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
   chatservice:
     build: .
@@ -17,7 +23,8 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - mongodb
+      mongodb:
+        condition: service_healthy
     environment:
       MONGODB_URI: mongodb://mongodb:27017/chatdb
       DOCSERVICE_BASE_URL: ${DOCSERVICE_BASE_URL:-http://docservice:8081}
