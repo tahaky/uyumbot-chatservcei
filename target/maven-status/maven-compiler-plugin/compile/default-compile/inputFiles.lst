@@ -1,0 +1,13 @@
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/service/DocServiceClient.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/model/ChatSession.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/model/CreateSessionResponse.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/ChatServiceApplication.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/config/OpenApiConfig.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/model/SendMessageResponse.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/controller/ChatController.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/repository/ChatSessionRepository.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/model/ChatMessage.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/service/OpenAiClient.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/config/WebClientConfig.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/service/ChatService.java
+/home/runner/work/uyumbot-chatservcei/uyumbot-chatservcei/src/main/java/com/uyumbot/chatservice/model/SendMessageRequest.java
