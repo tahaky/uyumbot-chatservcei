@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: chatservice
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/chatdb}
+
+server:
+  port: ${SERVER_PORT:8080}
+
+docservice:
+  base-url: ${DOCSERVICE_BASE_URL:http://localhost:8081}
+
+openai:
+  api-key: ${OPENAI_API_KEY:change-me}
+  model: ${OPENAI_MODEL:gpt-4o-mini}
+  base-url: ${OPENAI_BASE_URL:https://api.openai.com}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+logging:
+  level:
+    com.uyumbot: DEBUG

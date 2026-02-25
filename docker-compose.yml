@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: chatservice-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: chatdb
+
+  chatservice:
+    build: .
+    container_name: chatservice
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/chatdb
+      DOCSERVICE_BASE_URL: ${DOCSERVICE_BASE_URL:-http://docservice:8081}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-change-me}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+
+volumes:
+  mongo-data:
